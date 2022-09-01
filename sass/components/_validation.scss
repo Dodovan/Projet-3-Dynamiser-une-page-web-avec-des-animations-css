@@ -1,0 +1,31 @@
+.vali-ele{
+    & i{
+        color: white;
+    }
+    &:hover{
+        display: flex;
+    }
+
+    & :hover + .validation{
+        width: 14%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-terciary;
+        box-shadow: 0 3px 10px rgb(165, 165, 165);
+        margin-bottom: 16px;
+        margin-left: -3%;
+        border-bottom-right-radius: $border-radius-carte;
+        border-top-right-radius: $border-radius-carte;
+    }
+    & :hover + .ele{
+        width: 86%;
+        border-bottom-right-radius: 0%;
+        border-top-right-radius: 0%;
+    }
+
+    
+}
+/*.validation{
+    
+}*/

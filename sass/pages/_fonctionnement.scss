@@ -1,0 +1,46 @@
+#fonctionnement{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 40px;
+    @media (min-width: 992px){
+        width: 992px;
+        margin: auto;
+        
+        align-items: center;
+    }
+}
+.element{
+    display: flex;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: $background-color-principale;
+    box-shadow: 0 3px 10px rgb(221, 221, 221); 
+    @media (min-width: 992px){
+        width: 50%;
+    } 
+
+    &__symbole{
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+        padding-right: 30px;
+    }
+    &__numero{
+        position: relative;
+        right: 14px;
+        color: white;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        & p{
+            background-color: $color-primary;
+            border-radius: 25px;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

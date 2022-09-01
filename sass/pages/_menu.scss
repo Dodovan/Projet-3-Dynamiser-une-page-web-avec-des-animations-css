@@ -1,0 +1,135 @@
+.image--titre{
+    position: relative;
+}
+.menu-image{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+    & img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        
+    }
+}
+.titre{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+    padding-left: 5%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: -50px;
+    margin-bottom: -20px;
+    background-color: $background-color-principale;
+    &__nom{
+        padding-bottom: 10px;
+        /*& h1{
+            padding-bottom: 10px;
+            margin-bottom: 0px;
+        }*/
+    }
+    &__coeur{
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+    }
+
+}
+.barre--verte{
+    width: 50px;
+    height: 3px;
+    background-color: $color-terciary;
+    margin-bottom: 15px;
+    margin-top: 4px;
+}
+.partie-du-repas{
+    width: 100%;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    @media (min-width: 992px){
+        width: 30%;
+    }
+    /*width: 100%;*/
+    & p{
+        padding: 0px;
+        margin-bottom: 0px;
+        margin-top: 17px;
+    }
+}
+.menu{
+    background-color: $background-color-principale;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 60px;
+    margin-top: -40px;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 0px;
+    @media (min-width: 992px){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    &__titre{
+        display: flex;
+    }
+}
+
+.ele{
+    box-shadow: 0 3px 10px rgb(165, 165, 165);
+    display: flex;
+    flex-direction: column;
+    background-color: white ;
+    border-radius: 15px;
+    width: 96%;
+    padding-left: 4%;
+    margin-bottom: 16px;
+    
+    &__nom-plat{    
+        height: 30px;
+        padding-top: 7px;
+        & p{
+            padding: 0px;
+            margin: 0px ;
+        }
+    }
+    &__description-prix{
+        display: flex;
+        padding-bottom: 5px;
+        & p{
+            padding: 0px;
+            margin: 0px;
+            font-size: 15px;
+        }
+        &__description{
+            width: 80%;
+        }
+        &__prix{
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+        }
+    }   
+}
+.vali-ele{
+    width: 100%;
+    @media (min-width: 992px){
+        width: 100%;
+    }
+}
+.validation{
+    display: none;
+    width: 0%;
+}

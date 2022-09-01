@@ -1,0 +1,44 @@
+.introduction{
+    width: 100%;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: $background-color-principale;
+    @media (min-width: 992px){
+        width: 992px;
+        margin: auto;
+    }
+    &__position {
+        /*background-color: ;*/
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: rgb(225, 237, 229);
+        width: 100%;
+    }
+    & i {
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+    }
+    &__decouvrer{
+        padding-left: 5%;
+        padding-right: 5%;  
+        text-align: center;
+    }
+    &__reserver{
+        padding-left: 5%;
+        padding-right: 5%;
+        
+        
+    }
+    & h2{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,32 @@
+.foot{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    background-color: #000000d4;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    & img{
+        width: 100px;
+        object-fit: cover;
+        color: white;
+        filter: invert(1);
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+    &__element{
+        display: flex;
+        flex-direction: row;
+        & p{
+            padding-bottom: 0px;
+            padding-top: 0px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        & i{
+            position: relative;
+            top: 5px;
+            padding-right: 10px;
+        }
+    }
+}

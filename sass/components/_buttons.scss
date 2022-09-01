@@ -1,0 +1,14 @@
+.btn-rose{
+        width: 50%;
+        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        color: white;
+        box-shadow: 0 3px 10px rgb(165, 165, 165);
+        height: 60px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        
+}
