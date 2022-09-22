@@ -5,20 +5,43 @@
     padding-right: 5%;
     padding-bottom: 40px;
     @media (min-width: 992px){
-        width: 992px;
+        width: 90%;
         margin: auto;
-        
         align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    & h2{
+        @media (min-width: 992px){
+            width: 100%;
+            text-align: center;
+        }
     }
 }
+.fonctionnement__titre{
+    @media (min-width: 992px){
+        width: 100%;
+    }
+}
+
 .element{
     display: flex;
     border-radius: 20px;
     margin-bottom: 20px;
+    font-weight: 500;
     background-color: $background-color-principale;
-    box-shadow: 0 3px 10px rgb(221, 221, 221); 
+    box-shadow: 0 3px 10px rgb(221, 221, 221);
+    z-index: 1;
+    &:hover{
+        background-color: #9356dc29;
+    }
+    &:hover i{
+        color: $color-primary;
+    }
     @media (min-width: 992px){
-        width: 50%;
+        width: 30%;
     } 
 
     &__symbole{
@@ -35,6 +58,7 @@
         height: 10px;
         border-radius: 10px;
         & p{
+            font-weight: 300;
             background-color: $color-primary;
             border-radius: 25px;
             width: 25px;

@@ -1,31 +1,102 @@
-.vali-ele{
-    & i{
-        color: white;
+.ele-menu{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    overflow: hidden;
+    width: 96%;
+    padding: 2%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgb(165, 165, 165);
+    &:hover .ele-menu__texte{
+        padding-right: 50px;
+        @media (max-width: 992px) and (min-width: 769px){
+            padding-right: 100px;
+        }
     }
-    &:hover{
-        display: flex;
-    }
-
-    & :hover + .validation{
-        width: 14%;
+    &:hover .ele-menu__validation{
+        transform: translatex(-100%);
+        width: 50px;
+        opacity: 1;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: $color-terciary;
-        box-shadow: 0 3px 10px rgb(165, 165, 165);
-        margin-bottom: 16px;
-        margin-left: -3%;
-        border-bottom-right-radius: $border-radius-carte;
-        border-top-right-radius: $border-radius-carte;
+        @media (max-width: 992px) and (min-width: 769px){
+            width: 100px;
+        }
+        
     }
-    & :hover + .ele{
-        width: 86%;
-        border-bottom-right-radius: 0%;
-        border-top-right-radius: 0%;
+    &:hover .ele-menu__prix{
+        transform: translatex(-50px);
+        @media (max-width: 992px) and (min-width: 769px){
+            transform: translateX(-100px);
+        }
     }
-
+    &:hover .fa-circle-check{
+        transform: rotate(360deg);
+    }
+    &__validation{
+        width: 50px;
+    position: absolute;
+    right: -50px;
+    top: 0px;
+    background-color: $color-terciary;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 330ms ease-in-out;
+    @media (max-width: 992px) and (min-width: 769px){
+        right: -100px;
+    }
+    & .fa-circle-check{
+        transition: transform 500ms;
+        color: white;
+    }
+    }
+    &__prix{
+        width: 10%;
+        padding-right: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        transition: transform 330ms ease-in-out;
+        margin-left: 20px;
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        bottom: 3px;
+    }
+    &__texte{
+        width:90%;
+        margin-top: -18px;
+        padding-top: 0px;
+        transition: padding-right 330ms ease-in-out;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: flex;
+        line-height: 25px;
     
+        & p{
+            margin-top: 0px;
+            padding-top: 0px;
+            width: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 15px;
+        }
+        & strong{
+            margin-top: 0px;
+            padding-top: 0px;
+            font-size: 18px;
+        }
+    }
 }
-/*.validation{
-    
-}*/

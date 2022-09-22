@@ -10,9 +10,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 992px;
-        padding-left: 0%;
-        padding-right: 0%;
+        width: 90%;
         margin: auto;
     }
 }
@@ -29,7 +27,7 @@
     margin-bottom: 20px;
     box-shadow: 0 3px 10px rgb(221, 221, 221);
     @media (min-width: 992px){
-        width: 40%;
+        width: 45%;
         
     }
     & h2{
@@ -61,12 +59,17 @@
         right: 5%;
         width: 80px;
         height: 30px;
-        background-color: rgb(116, 224, 170);
-        color: rgb(35, 163, 99);
+        background-color: $color-terciary;
+        color: rgb(10, 137, 29);
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: -30px;
+        border-radius: 3px;
+        font-weight: 400;
+        padding-right: 11px;
+        padding-left: 11px;
+        font-size: 16px;
     }
     &__image{
         width: 100%;
@@ -81,17 +84,13 @@
         &__nom{
             width: 90%;
             font-weight: 700;
-            padding-top: 10px;
-            
+            padding-top: 10px;   
         }
         &__coeur{
             display: flex;
             align-items: center;
             position: relative;
             top: 10px;
-            & i{
-                font-size: 25px;
-            }
         }
     }
 }

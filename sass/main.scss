@@ -1,7 +1,5 @@
 @import "./utils/variables";
-@import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/extensions";
 
 @import "./base/base";
 @import "./base/typography";
@@ -10,17 +8,11 @@
 @import "./components/loader";
 @import "./components/validation";
 @import "./components/appa";
+@import "./components/coeur";
 
 @import "./layout/header";
 @import "./layout/footer";
-@import "./layout/nav";
-@import "./layout/container";
-@import "./layout/form";
 
-
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";
 @import "./pages/introduction";
 @import "./pages/restaurants";
 @import "./pages/restaurants";

@@ -7,15 +7,14 @@
     align-items: center;
     background-color: $background-color-principale;
     @media (min-width: 992px){
-        width: 992px;
+        width: 100%;
         margin: auto;
     }
     &__position {
-        /*background-color: ;*/
         display: flex;
         justify-content: center;
         align-content: center;
-        background-color: rgb(225, 237, 229);
+        background-color: rgb(229, 229, 230);
         width: 100%;
     }
     & i {

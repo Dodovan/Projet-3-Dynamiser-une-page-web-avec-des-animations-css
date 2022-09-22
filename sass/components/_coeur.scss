@@ -1,0 +1,15 @@
+.coeur{
+    &__2{
+        font-size: 2px;
+        transition: transform 500ms ease-in-out;
+        opacity: 0;
+        @include coeur-cache;
+    } 
+    &:hover .coeur__2{
+        opacity: 1;
+        transform: scale(11);
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
