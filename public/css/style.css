@@ -326,6 +326,8 @@ h1 {
   position: absolute;
   left: 30px;
   top: 30px;
+  text-decoration: none;
+  color: black;
 }
 
 .foot {
@@ -673,8 +675,8 @@ h1 {
 }
 @media (min-width: 992px) {
   .element__symbole {
-    padding-right: 7px;
-    padding-left: 7px;
+    padding-right: 3%;
+    padding-left: 3%;
   }
 }
 .element__numero {
