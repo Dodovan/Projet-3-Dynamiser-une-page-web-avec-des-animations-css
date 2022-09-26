@@ -49,6 +49,10 @@
         align-items: center;
         padding-left: 25px;
         padding-right: 30px;
+        @media (min-width: 992px){
+            padding-right: 7px;
+            padding-left: 7px;
+        } 
     }
     &__numero{
         position: relative;

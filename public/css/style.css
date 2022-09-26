@@ -510,6 +510,11 @@ h1 {
   top: 10px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .pre_restaurants {
   display: flex;
   flex-direction: column;
@@ -610,6 +615,11 @@ h1 {
   top: 10px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 #fonctionnement {
   display: flex;
   flex-direction: column;
@@ -666,6 +676,12 @@ h1 {
   align-items: center;
   padding-left: 25px;
   padding-right: 30px;
+}
+@media (min-width: 992px) {
+  .element__symbole {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
 }
 .element__numero {
   position: relative;
@@ -789,44 +805,6 @@ h1 {
 }
 .menu__titre {
   display: flex;
-}
-
-.ele {
-  box-shadow: 0 3px 10px rgb(165, 165, 165);
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  border-radius: 15px;
-  width: 96%;
-  padding-left: 4%;
-  margin-bottom: 16px;
-}
-.ele__nom-plat {
-  height: 30px;
-  padding-top: 7px;
-}
-.ele__nom-plat p {
-  padding: 0px;
-  margin: 0px;
-}
-.ele__description-prix {
-  display: flex;
-  padding-bottom: 5px;
-}
-.ele__description-prix p {
-  padding: 0px;
-  margin: 0px;
-  font-size: 15px;
-}
-.ele__description-prix__description {
-  width: 80%;
-}
-.ele__description-prix__prix {
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
